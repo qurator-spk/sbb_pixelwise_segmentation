@@ -158,7 +158,7 @@ def data_gen(img_folder, mask_folder, batch_size, input_height, input_width, n_c
             # print(img_folder+'/'+n[i])
 
             try:
-                filename = n[i].split('.')[0]
+                filename = os.path.splitext(n[i])[0]
 
                 train_img = cv2.imread(img_folder + '/' + n[i]) / 255.
                 train_img = cv2.resize(train_img, (input_width, input_height),
