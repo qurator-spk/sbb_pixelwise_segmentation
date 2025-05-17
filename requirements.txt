@@ -6,3 +6,6 @@ tqdm
 imutils
 numpy
 scipy
+scikit-learn
+shapely
+click
